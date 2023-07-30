@@ -16,7 +16,7 @@ const FiltersPanel = ({ isFiltered, children }: IFiltersPanelProps) => {
     };
 
     return (
-        <div className="filtersWrapper filtersWrapper_expanded">
+        <div className="filtersWrapper">
             <div className="filtersWrapper__header">
                 <h4>Filter by</h4>
                 <div className="filtersWrapper__spoiler" onClick={expandFiltersHandler}>

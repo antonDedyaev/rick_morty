@@ -10,4 +10,7 @@ start:
 lint:
 	npx eslint .
 
+deploy:
+	npm run deploy
+
 .PHONY: build
