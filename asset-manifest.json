@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.506ec464.css",
+    "main.js": "/static/js/main.9670d8ad.js",
+    "static/media/PTSans-Bold.ttf": "/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
+    "static/media/notFound.gif": "/static/media/notFound.ec59c796b0a0d2b45a67.gif",
+    "static/media/PTSans-Regular.ttf": "/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
+    "static/media/Rick-And-Morty-Logo.png": "/static/media/Rick-And-Morty-Logo.de13d48466d780cbf10c.png",
+    "static/media/magnifying-glass.svg": "/static/media/magnifying-glass.e68b72b110ac62a961a3.svg",
+    "static/media/circle-remove.svg": "/static/media/circle-remove.c52a3e8a8c61cf08cd4a.svg",
+    "index.html": "/index.html",
+    "static/media/round-arrow-down.svg": "/static/media/round-arrow-down.e7fe17ce2eef1d195ed6.svg",
+    "main.506ec464.css.map": "/static/css/main.506ec464.css.map",
+    "main.9670d8ad.js.map": "/static/js/main.9670d8ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.506ec464.css",
+    "static/js/main.9670d8ad.js"
+  ]
+}
