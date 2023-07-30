@@ -16,8 +16,24 @@
 
     z-index: 2;
 
-    h4 {
+    &__header {
+        display: flex;
         font-size: 18px;
+        font-weight: 700;
+
+        h4 {
+            display: block;
+        }
+    }
+
+    &__spoiler {
+        display: none;
+        position: relative;
+        &:after {
+            position: absolute;
+            right: -30%;
+            content: url('../assets/images/showbutton.svg');
+        }
     }
 
     &__planksColumn {
@@ -29,6 +45,7 @@
 
         margin-top: 10px;
     }
+
     &__removeFilters {
         position: relative;
         margin: 15px 0 10px 20px;
@@ -88,14 +105,67 @@
 
 @media screen and (max-width: 620px) {
     .filtersWrapper {
+        max-height: 50px;
+        max-width: 160px;
         width: 90%;
         box-shadow: 0 16px 32px rgba(7, 5, 14, 0.4);
         top: 0px;
 
+        &:active {
+            background: $lightlime;
+            transform: translateY(3px);
+            transition: all 0.3s ease;
+        }
+
         &__planksColumn {
+            opacity: 0;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: flex-start;
+        }
+
+        &__header {
+            h4 {
+                display: none;
+            }
+        }
+
+        &__spoiler {
+            display: block;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                right: -30%;
+                content: url('../assets/images/showbutton.svg');
+            }
+        }
+        &__removeFilters {
+            opacity: 0;
+        }
+
+        &_expanded.filtersWrapper {
+            max-height: max-content;
+            max-width: none;
+            transition: all 0.8s ease;
+        }
+
+        &_expanded {
+            .filtersWrapper {
+                &__planksColumn {
+                    opacity: 1;
+                    transition: all 0.6s;
+                }
+
+                &__removeFilters {
+                    opacity: 0.3;
+                    transition: all 0.6s;
+
+                    &_active {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }

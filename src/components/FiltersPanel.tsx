@@ -10,9 +10,20 @@ interface IFiltersPanelProps {
 const FiltersPanel = ({ isFiltered, children }: IFiltersPanelProps) => {
     const dispatch = useAppDispatch();
 
+    const expandFiltersHandler = () => {
+        const wrapper = document.querySelector('.filtersWrapper');
+        wrapper?.classList.toggle('filtersWrapper_expanded');
+    };
+
     return (
-        <div className="filtersWrapper">
-            <h4>Filter by</h4>
+        <div className="filtersWrapper filtersWrapper_expanded">
+            <div className="filtersWrapper__header">
+                <h4>Filter by</h4>
+                <div className="filtersWrapper__spoiler" onClick={expandFiltersHandler}>
+                    Show filters
+                </div>
+            </div>
+
             <div className="filtersWrapper__planksColumn">{children}</div>
             <button
                 className={

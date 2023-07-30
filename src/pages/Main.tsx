@@ -16,7 +16,6 @@ const Main = () => {
     const [popupContentId, setPopupContentId] = useState(0);
     const [currentPage, setCurrentPage] = useState<string | null>('https://rickandmortyapi.com/api/character');
     const [fetching, setFetching] = useState(true);
-    const [loading, setLoading] = useState(false);
     const characterDetails = characters && characters.find((item) => item.id === popupContentId);
 
     const filters = useAppSelector((state) => state.filters);
@@ -53,7 +52,6 @@ const Main = () => {
     useEffect(() => {
         const fetchCharacters = async () => {
             try {
-                setLoading(true);
                 const data = await fetch(`https://rickandmortyapi.com/api/character/?${queryString}`);
                 const fetchedCharacters = await data.json();
                 setCharacters(fetchedCharacters.results);
@@ -62,7 +60,6 @@ const Main = () => {
                 console.log(e);
             } finally {
                 setFetching(false);
-                setLoading(false);
             }
         };
         fetchCharacters();
@@ -72,9 +69,7 @@ const Main = () => {
         if (fetching) {
             const fetchCharacters = async () => {
                 try {
-                    setLoading(true);
                     const data = await fetch(currentPage!);
-                    console.log(data);
                     const fetchedCharacters = await data.json();
                     setCharacters([...characters, ...fetchedCharacters.results]);
                     setCurrentPage(fetchedCharacters.info.next);
@@ -82,7 +77,6 @@ const Main = () => {
                     console.log('All data has been fetched!');
                 } finally {
                     setFetching(false);
-                    setLoading(false);
                 }
             };
             fetchCharacters();
@@ -92,7 +86,7 @@ const Main = () => {
         <div className="container">
             <div className="container_inner">
                 <img src={logo} alt="Rick and Morty Logo" />
-                <h1>'Get to know Rick and Morty characters'</h1>
+                <h1>Get to know Rick and Morty characters</h1>
                 <div className="container__charactersWrapper">
                     <FiltersPanel isFiltered={filterValues.length !== 0}>
                         <FilterPlank title="name">
