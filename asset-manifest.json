@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4260ba4a.css",
-    "main.js": "/static/js/main.b6c27ee2.js",
-    "static/media/PTSans-Bold.ttf": "/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
-    "static/media/notFound.gif": "/static/media/notFound.ec59c796b0a0d2b45a67.gif",
-    "static/media/PTSans-Regular.ttf": "/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
-    "static/media/Rick-And-Morty-Logo.png": "/static/media/Rick-And-Morty-Logo.de13d48466d780cbf10c.png",
-    "static/media/magnifying-glass.svg": "/static/media/magnifying-glass.e68b72b110ac62a961a3.svg",
-    "static/media/circle-remove.svg": "/static/media/circle-remove.c52a3e8a8c61cf08cd4a.svg",
-    "index.html": "/index.html",
-    "static/media/round-arrow-down.svg": "/static/media/round-arrow-down.e7fe17ce2eef1d195ed6.svg",
-    "static/media/showbutton.svg": "/static/media/showbutton.8641477adba54510beff.svg",
-    "main.4260ba4a.css.map": "/static/css/main.4260ba4a.css.map",
-    "main.b6c27ee2.js.map": "/static/js/main.b6c27ee2.js.map"
+    "main.css": "/rick_morty/static/css/main.34f0264b.css",
+    "main.js": "/rick_morty/static/js/main.2b03cedf.js",
+    "static/media/PTSans-Bold.ttf": "/rick_morty/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
+    "static/media/notFound.gif": "/rick_morty/static/media/notFound.ec59c796b0a0d2b45a67.gif",
+    "static/media/PTSans-Regular.ttf": "/rick_morty/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
+    "static/media/Rick-And-Morty-Logo.png": "/rick_morty/static/media/Rick-And-Morty-Logo.de13d48466d780cbf10c.png",
+    "static/media/magnifying-glass.svg": "/rick_morty/static/media/magnifying-glass.e68b72b110ac62a961a3.svg",
+    "static/media/circle-remove.svg": "/rick_morty/static/media/circle-remove.c52a3e8a8c61cf08cd4a.svg",
+    "index.html": "/rick_morty/index.html",
+    "static/media/round-arrow-down.svg": "/rick_morty/static/media/round-arrow-down.e7fe17ce2eef1d195ed6.svg",
+    "static/media/showbutton.svg": "/rick_morty/static/media/showbutton.8641477adba54510beff.svg",
+    "main.34f0264b.css.map": "/rick_morty/static/css/main.34f0264b.css.map",
+    "main.2b03cedf.js.map": "/rick_morty/static/js/main.2b03cedf.js.map"
   },
   "entrypoints": [
-    "static/css/main.4260ba4a.css",
-    "static/js/main.b6c27ee2.js"
+    "static/css/main.34f0264b.css",
+    "static/js/main.2b03cedf.js"
   ]
 }
