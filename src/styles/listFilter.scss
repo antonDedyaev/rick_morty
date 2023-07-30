@@ -1,0 +1,19 @@
+.listFilterWrapper {
+    &__listItem {
+        display: flex;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        align-items: center;
+
+        input {
+            accent-color: $lime;
+        }
+
+        label {
+            padding-left: 15px;
+            text-transform: capitalize;
+
+            line-height: normal;
+        }
+    }
+}

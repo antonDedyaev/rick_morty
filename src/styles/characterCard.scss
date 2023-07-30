@@ -1,0 +1,105 @@
+.cardWrapper {
+    height: max-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    background: $lightgreen;
+
+    &__photo {
+        flex-shrink: 0;
+        border: 3px solid $lime;
+        border-radius: 3px;
+        height: 80px;
+        box-sizing: content-box;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__info {
+        margin-left: 25px;
+    }
+
+    &__characterName {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+
+        border-bottom: 1px solid;
+        font-size: 20px;
+        font-weight: 700;
+
+        color: $darkorange;
+    }
+
+    &__characterStatus {
+        tr {
+            font-size: 15px;
+        }
+
+        tr > td:last-child {
+            padding-left: 12px;
+            font-weight: 700;
+
+            color: darkred;
+        }
+    }
+
+    &__detailsButton {
+        position: absolute;
+        right: 10%;
+        align-self: center;
+
+        padding: 8px 16px;
+
+        border-radius: 4px;
+        background: $lime;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background: $lightlime;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:active {
+            transform: translateY(5px);
+            transition: all 0.2s;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .cardWrapper {
+        height: 170px;
+        align-items: start;
+        &__detailsButton {
+            left: 10%;
+            bottom: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cardWrapper {
+        &__characterName {
+            font-size: 16px;
+        }
+
+        &__characterStatus {
+            tr {
+                font-size: 12px;
+            }
+
+            tr > td:last-child {
+                padding-left: 3px;
+            }
+        }
+    }
+}

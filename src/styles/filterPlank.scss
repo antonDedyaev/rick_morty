@@ -1,0 +1,83 @@
+.plankWrapper {
+    position: relative;
+    border-radius: 5px;
+
+    background: $lightgreen;
+
+    cursor: pointer;
+
+    &:hover {
+        background: $freshgreen;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &_isActive {
+        .plankWrapper {
+            &__dropdown {
+                display: block;
+            }
+
+            &__content {
+                &::before {
+                    top: 5%;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 5px 15px;
+
+        &::before {
+            position: absolute;
+            right: 6%;
+            content: url('../assets/images/round-arrow-down.svg');
+        }
+    }
+
+    &__textContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__filterTitle {
+        font-size: 16px;
+
+        font-weight: 500;
+        color: $darkred;
+        text-transform: capitalize;
+    }
+
+    &__filterSubtitle {
+        font-size: 12px;
+        margin-top: 2px;
+        padding-left: 1px;
+
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    &__dropdown {
+        display: none;
+        position: absolute;
+        width: 100%;
+        margin-top: 4px;
+        padding: 10px 5px;
+
+        border-radius: 4px;
+
+        background: $lightgreen;
+        box-shadow: 0 16px 32px rgba(7, 5, 14, 0.4);
+        cursor: pointer;
+
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .plankWrapper {
+        min-width: 140px;
+    }
+}

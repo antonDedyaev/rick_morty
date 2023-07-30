@@ -1,0 +1,49 @@
+@font-face {
+    font-weight: 400;
+    font-family: 'PTSans';
+    src: url('../assets/fonts/PTSans-Regular.ttf');
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'PTSans';
+    src: url('../assets/fonts/PTSans-Bold.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: $darkorange;
+    display: flex;
+    justify-content: center;
+}
+
+html,
+body {
+    font-family: 'PTSans', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}

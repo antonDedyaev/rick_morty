@@ -1,0 +1,116 @@
+.characterInfoWrapper {
+    display: flex;
+    padding: 15px;
+
+    &__photo {
+        border: 4px solid $lime;
+        border-radius: 3px;
+        height: 200px;
+        box-sizing: content-box;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    &__info {
+        margin-left: 25px;
+    }
+
+    &__name {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    &__details {
+        font-size: 16px;
+
+        td:last-child {
+            padding-left: 20px;
+
+            font-weight: 700;
+            color: $darkred;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .characterInfoWrapper {
+        &__photo {
+            height: 150px;
+
+            img {
+                width: 150px;
+            }
+        }
+        &__info {
+            margin-left: 15px;
+        }
+
+        &__name {
+            margin-top: 3px;
+            margin-bottom: 15px;
+        }
+
+        &__details {
+            font-size: 14px;
+
+            td:last-child {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .characterInfoWrapper {
+        &__photo {
+            margin-top: 5px;
+            height: 90px;
+
+            img {
+                width: 90px;
+            }
+        }
+        &__info {
+            margin-left: 8px;
+            line-height: 100%;
+        }
+
+        &__name {
+            margin-top: 2px;
+            margin-bottom: 8px;
+            font-size: 16px !important;
+        }
+
+        &__details {
+            font-size: 12px;
+
+            td:last-child {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .characterInfoWrapper {
+        &__photo {
+            margin-top: 8px;
+            height: 70px;
+
+            img {
+                width: 70px;
+            }
+        }
+        &__info {
+            margin-left: 8px;
+            line-height: 100%;
+            font-size: 12px;
+        }
+
+        &__details {
+            font-size: 10px;
+        }
+    }
+}
