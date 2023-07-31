@@ -118,7 +118,7 @@
         }
 
         &__planksColumn {
-            opacity: 0;
+            display: none;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -141,7 +141,7 @@
             }
         }
         &__removeFilters {
-            opacity: 0;
+            display: none;
         }
 
         &_expanded.filtersWrapper {
@@ -153,13 +153,11 @@
         &_expanded {
             .filtersWrapper {
                 &__planksColumn {
-                    opacity: 1;
-                    transition: all 0.6s;
+                    display: flex;
                 }
 
                 &__removeFilters {
-                    opacity: 0.3;
-                    transition: all 0.6s;
+                    display: block;
 
                     &_active {
                         opacity: 1;

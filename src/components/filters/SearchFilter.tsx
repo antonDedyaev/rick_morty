@@ -7,6 +7,12 @@ const SearchFilter = ({ type }: { type: string }) => {
     const [inputValue, setInputValue] = useState('');
     const dispatch = useAppDispatch();
 
+    const clearFilterHandler = () => {
+        setInputValue('');
+        const expandedDropdown = document.querySelector('.plankWrapper_isActive');
+        expandedDropdown?.classList.remove('plankWrapper_isActive');
+    };
+
     const handleEnterPressed = ({ target, key }: KeyboardEvent): void => {
         const searchInput = target as HTMLInputElement;
 
@@ -14,15 +20,15 @@ const SearchFilter = ({ type }: { type: string }) => {
             switch (type) {
                 case 'name':
                     dispatch(nameFilterAdded(searchInput.value));
-                    setInputValue('');
+                    clearFilterHandler();
                     break;
                 case 'species':
                     dispatch(speciesFilterAdded(searchInput.value));
-                    setInputValue('');
+                    clearFilterHandler();
                     break;
                 case 'type':
                     dispatch(typeFilterAdded(searchInput.value));
-                    setInputValue('');
+                    clearFilterHandler();
                     break;
             }
         }
@@ -44,7 +50,7 @@ const SearchFilter = ({ type }: { type: string }) => {
                 }
                 onClick={() => setInputValue('')}
             >
-                <img src={clearIcon} alt="" />
+                <img src={clearIcon} alt="Иконка с крестиком" />
             </div>
         </div>
     );

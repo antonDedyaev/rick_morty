@@ -9,13 +9,20 @@ const ListFilter = ({ list }: { list: string }) => {
         const parent = document.querySelector(`.${list}`);
         const selectedItem = parent && (parent.querySelector('input[type="radio"]:checked') as HTMLInputElement);
 
+        const collapseDropdownHandler = () => {
+            const expandedDropdown = document.querySelector('.plankWrapper_isActive');
+            expandedDropdown?.classList.remove('plankWrapper_isActive');
+        };
+
         if (selectedItem) {
             switch (list) {
                 case 'status':
                     dispatch(statusFilterAdded(selectedItem.value));
+                    collapseDropdownHandler();
                     break;
                 case 'gender':
                     dispatch(genderFilterAdded(selectedItem.value));
+                    collapseDropdownHandler();
                     break;
             }
         }

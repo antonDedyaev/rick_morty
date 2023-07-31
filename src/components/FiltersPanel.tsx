@@ -17,6 +17,12 @@ const FiltersPanel = ({ isFiltered, children }: IFiltersPanelProps) => {
         wrapper?.classList.contains('filtersWrapper_expanded') ? setExpandedHeader(true) : setExpandedHeader(false);
     };
 
+    const removeFiltersHandler = () => {
+        dispatch(filtersRemoved());
+        const selectedRadioBtns = document.querySelectorAll('input[type="radio"]:checked');
+        selectedRadioBtns.forEach((btn) => ((btn as HTMLInputElement).checked = false));
+    };
+
     return (
         <div className="filtersWrapper">
             <div className="filtersWrapper__header">
@@ -33,7 +39,7 @@ const FiltersPanel = ({ isFiltered, children }: IFiltersPanelProps) => {
                         ? 'filtersWrapper__removeFilters filtersWrapper__removeFilters_active'
                         : 'filtersWrapper__removeFilters'
                 }
-                onClick={() => dispatch(filtersRemoved())}
+                onClick={removeFiltersHandler}
             >
                 Clear filters
             </button>
