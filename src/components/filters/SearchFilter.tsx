@@ -26,10 +26,11 @@ const SearchFilter = ({ type }: { type: string }) => {
             }
         }
     };
+
     return (
         <div className="searchFilterWrapper" onKeyDown={handleEnterPressed as VoidFunction}>
             <input
-                type="text"
+                type="search"
                 placeholder="Type to search..."
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
