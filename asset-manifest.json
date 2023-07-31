@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/rick_morty/static/css/main.a6eb8ae8.css",
-    "main.js": "/rick_morty/static/js/main.cfe770ca.js",
+    "main.css": "/rick_morty/static/css/main.94948adb.css",
+    "main.js": "/rick_morty/static/js/main.eda9ffa0.js",
     "static/media/PTSans-Bold.ttf": "/rick_morty/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
     "static/media/notFound.gif": "/rick_morty/static/media/notFound.ec59c796b0a0d2b45a67.gif",
     "static/media/PTSans-Regular.ttf": "/rick_morty/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
     "static/media/Rick-And-Morty-Logo.png": "/rick_morty/static/media/Rick-And-Morty-Logo.de13d48466d780cbf10c.png",
+    "static/media/arrow-up.svg": "/rick_morty/static/media/arrow-up.2cb895a118cf8c78c43a93ec7382ee8f.svg",
     "static/media/magnifying-glass.svg": "/rick_morty/static/media/magnifying-glass.e68b72b110ac62a961a3.svg",
     "static/media/circle-remove.svg": "/rick_morty/static/media/circle-remove.c52a3e8a8c61cf08cd4a.svg",
     "index.html": "/rick_morty/index.html",
     "static/media/clear.svg": "/rick_morty/static/media/clear.bb4450949d3f5ba89a16e7a646a945d3.svg",
     "static/media/round-arrow-down.svg": "/rick_morty/static/media/round-arrow-down.e7fe17ce2eef1d195ed6.svg",
     "static/media/showbutton.svg": "/rick_morty/static/media/showbutton.8641477adba54510beff.svg",
-    "main.a6eb8ae8.css.map": "/rick_morty/static/css/main.a6eb8ae8.css.map",
-    "main.cfe770ca.js.map": "/rick_morty/static/js/main.cfe770ca.js.map"
+    "main.94948adb.css.map": "/rick_morty/static/css/main.94948adb.css.map",
+    "main.eda9ffa0.js.map": "/rick_morty/static/js/main.eda9ffa0.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6eb8ae8.css",
-    "static/js/main.cfe770ca.js"
+    "static/css/main.94948adb.css",
+    "static/js/main.eda9ffa0.js"
   ]
 }
