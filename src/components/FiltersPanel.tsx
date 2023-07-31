@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import { useAppDispatch } from '../hooks/redux';
 import { filtersRemoved } from '../store/slices/filtersSlice';
 
@@ -9,10 +9,12 @@ interface IFiltersPanelProps {
 
 const FiltersPanel = ({ isFiltered, children }: IFiltersPanelProps) => {
     const dispatch = useAppDispatch();
+    const [expandedHeader, setExpandedHeader] = useState(false);
 
     const expandFiltersHandler = () => {
         const wrapper = document.querySelector('.filtersWrapper');
         wrapper?.classList.toggle('filtersWrapper_expanded');
+        wrapper?.classList.contains('filtersWrapper_expanded') ? setExpandedHeader(true) : setExpandedHeader(false);
     };
 
     return (
@@ -20,7 +22,7 @@ const FiltersPanel = ({ isFiltered, children }: IFiltersPanelProps) => {
             <div className="filtersWrapper__header">
                 <h4>Filter by</h4>
                 <div className="filtersWrapper__spoiler" onClick={expandFiltersHandler}>
-                    Show filters
+                    {expandedHeader ? 'Hide filters' : 'Show filters'}
                 </div>
             </div>
 
