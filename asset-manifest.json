@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rick_morty/static/css/main.34f0264b.css",
+    "main.css": "/rick_morty/static/css/main.f12af57a.css",
     "main.js": "/rick_morty/static/js/main.2b03cedf.js",
     "static/media/PTSans-Bold.ttf": "/rick_morty/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
     "static/media/notFound.gif": "/rick_morty/static/media/notFound.ec59c796b0a0d2b45a67.gif",
@@ -11,11 +11,11 @@
     "index.html": "/rick_morty/index.html",
     "static/media/round-arrow-down.svg": "/rick_morty/static/media/round-arrow-down.e7fe17ce2eef1d195ed6.svg",
     "static/media/showbutton.svg": "/rick_morty/static/media/showbutton.8641477adba54510beff.svg",
-    "main.34f0264b.css.map": "/rick_morty/static/css/main.34f0264b.css.map",
+    "main.f12af57a.css.map": "/rick_morty/static/css/main.f12af57a.css.map",
     "main.2b03cedf.js.map": "/rick_morty/static/js/main.2b03cedf.js.map"
   },
   "entrypoints": [
-    "static/css/main.34f0264b.css",
+    "static/css/main.f12af57a.css",
     "static/js/main.2b03cedf.js"
   ]
 }
