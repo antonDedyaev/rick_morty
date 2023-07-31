@@ -1,0 +1,62 @@
+.arrowButton {
+    position: fixed;
+    left: 30%;
+
+    bottom: 30px;
+    z-index: 5;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1900px) {
+    .arrowButton {
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .arrowButton {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .arrowButton {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .arrowButton {
+        left: 70%;
+        bottom: 50px;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .arrowButton {
+        left: 75%;
+        bottom: 50px;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .arrowButton {
+        left: 78%;
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

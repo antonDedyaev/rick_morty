@@ -9,6 +9,7 @@ import { useAppSelector } from '../hooks/redux';
 import ListFilter from '../components/filters/ListFilter';
 import Popup from '../components/Popup';
 import CharacterInfo from '../components/CharacterInfo';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Main = () => {
     const [characters, setCharacters] = useState<ICharacter[]>([]);
@@ -125,6 +126,7 @@ const Main = () => {
                     />
                 )}
             </Popup>
+            <ScrollToTop />
         </div>
     );
 };
