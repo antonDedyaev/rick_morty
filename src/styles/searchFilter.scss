@@ -24,6 +24,24 @@
             font-style: italic;
         }
     }
+
+    &__clearButton {
+        display: none;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        cursor: pointer;
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+
+        &_active {
+            display: block;
+        }
+    }
 }
 
 @media screen and (min-width: 420px) and (max-width: 899px) {
@@ -31,8 +49,6 @@
         input {
             &::placeholder {
                 font-size: 10px;
-                color: gray;
-                font-style: italic;
             }
         }
     }

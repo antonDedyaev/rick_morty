@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAppDispatch } from '../../hooks/redux';
 import { nameFilterAdded, speciesFilterAdded, typeFilterAdded } from '../../store/slices/filtersSlice';
+import clearIcon from '../../assets/images/clear.svg';
 
 const SearchFilter = ({ type }: { type: string }) => {
     const [inputValue, setInputValue] = useState('');
@@ -30,11 +31,21 @@ const SearchFilter = ({ type }: { type: string }) => {
     return (
         <div className="searchFilterWrapper" onKeyDown={handleEnterPressed as VoidFunction}>
             <input
-                type="search"
+                type="text"
                 placeholder="Type to search..."
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
             />
+            <div
+                className={
+                    inputValue.length !== 0
+                        ? 'searchFilterWrapper__clearButton searchFilterWrapper__clearButton_active'
+                        : 'searchFilterWrapper__clearButton'
+                }
+                onClick={() => setInputValue('')}
+            >
+                <img src={clearIcon} alt="" />
+            </div>
         </div>
     );
 };
